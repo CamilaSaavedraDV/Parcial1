@@ -1,0 +1,64 @@
+.plataformas {
+    background-color: #000106;
+    padding: 20px 0;
+    text-align: center;
+    color: #ccc;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+.plataformas span{
+    font-style: italic;
+}
+
+.plataformas .redes {
+    margin-bottom: 10px;
+  }
+  
+.plataformas .icono {
+    color: #ccc;
+    margin: 0 12px;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+  }
+  
+.plataformas .icono.hbo{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    margin: 0 12px;
+
+    transition: background-color 0.3s ease;
+    border-radius: 50%;
+}
+
+.plataformas .hbo-icono{
+    max-height: 28px;
+    max-width: 100%;
+    transition: filter 0.3s ease;
+    filter: grayscale(1) brightness(0.8);
+    display: block;
+    margin: auto;
+}
+
+.plataformas .icono.hbo:hover .hbo-icono {
+    filter: none;
+}
+
+.plataformas .icono.ig:hover {
+  color: #9a30e1;
+}
+  
+.plataformas .icono.x:hover {
+    color: #303030;
+  }
+    
+  .plataformas .icono.facebook:hover {
+    color: #274a94;
+  }
+
+.plataformas .icono.yt:hover {
+    color: #d10101;
+  }
