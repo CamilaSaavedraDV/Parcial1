@@ -1,0 +1,196 @@
+body{
+    background-color:#010101;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: cormorant, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1, h2, h3{
+    color: rgb(255, 255, 255);
+    font-family: felix-titling, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+h1{
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+h3 {
+    font-size: 20px; 
+}
+
+p, li{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.bloque{
+    background-color: rgba(70, 7, 7, 0.5);
+    margin: 60px auto;
+    max-width: 800px;
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.reinos{
+    text-align: center;
+    padding: 10px 30px 30px;
+    margin: auto;
+    font-style: italic;
+    font-size: 22px;
+}
+
+.casa{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    margin: 80px auto;
+    max-width: 75%;
+    background-color: #000106;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.casa::before{
+    content: '';
+    position: absolute;
+    top: 0%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        0deg,
+        transparent);
+    transition: all 0.8s ease;
+    opacity: 0;
+    z-index: 1; 
+}
+
+.casa:hover{
+    transform: scale(1.02);
+}
+
+.casa:hover::before {
+    opacity: 1;
+    transform: rotate(-30deg) translateY(100%);
+}
+
+.imagen_emblema{
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    z-index: 2;
+}
+
+.emblema{
+    width: 200px;
+    height: auto;
+    align-items: center;
+}
+
+.texto_casa{
+    color: #fff;
+    z-index: 2;
+}
+
+.emblema_lema{
+    margin: 0;
+    padding: 5px;
+}
+
+.lista{
+    list-style: none;
+    line-height: 25px;
+}
+
+.stark{
+    box-shadow: 0 0 16px #a8a8a8;
+}
+
+.stark:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(168,168,168,0.5));
+}
+
+.lannister{
+    box-shadow: 0 0 16px #8c0707;
+}
+
+.lannister:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(140,7,7,0.5)); 
+}
+
+.baratheon{
+    box-shadow: 0 0 16px #FFD700;
+}
+
+.baratheon:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(255,215,0,0.5)); 
+}
+
+.tyrell{
+    box-shadow: 0 0 16px 0px #00913f;
+}
+
+.tyrell:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 80%, rgba(0,145,63,0.5)); 
+}
+
+.martell{
+    box-shadow: 0 0 16px #ff8000;
+}
+
+.martell:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(255,128,0,0.5)); 
+}
+
+.tully{
+    box-shadow: 0 0 16px #0c113f;
+}
+
+.tully:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(12,17,63,0.5)); 
+}
+
+.greyjoy{
+    box-shadow: 0 0 16px #3f3f3f;
+}
+
+.greyjoy:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(63,63,63,0.5)); 
+}
+
+.targaryen{
+    box-shadow: 0 0 16px #ad0404;
+}
+
+.targaryen:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(173,4,4,0.5)); 
+}
+
+.guardia{
+    box-shadow: 0 0 16px #dbdbdb;
+}
+
+.guardia:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(219,219,219,0.5)); 
+}
+
+.caminante{
+    box-shadow: 0 0 16px #c0f4ff;
+}
+
+.caminante:hover::before {
+    background: linear-gradient(0deg, transparent, transparent 30%, rgba(192,244,255,0.5)); 
+}

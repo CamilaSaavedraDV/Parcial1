@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: cormorant, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fondo{
+    position: relative;
+    background-image: url('/imagenes/confirmacion.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+}
+
+.mensaje {
+    background: rgba(234, 193, 144, 0.7);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 1px 15px rgba(225, 51, 0, 0.7);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.mensaje h1 {
+    color: #000;
+    font-size: 38px;
+    margin-bottom: 16px;
+    font-family: felix-titling, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+.mensaje p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0A0102;
+    margin-bottom: 50px;
+}
+
+.mensaje .btn {
+    background-color: #904D22;
+    color: #0A0102;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.mensaje .btn:hover {
+    background-color: #65381e;
+}
+
+i{
+    color: #65381e;
+    font-size: 40px;
+}

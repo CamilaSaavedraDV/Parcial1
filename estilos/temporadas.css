@@ -1,0 +1,87 @@
+body{
+    background-color:#010101;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    font-family: cormorant, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    justify-content: center;
+    font-family: felix-titling;
+    letter-spacing: 2px;
+}
+
+.bloque{    
+    background-color: rgba(70, 7, 7, 0.5);
+    margin: 60px auto;
+    max-width: 800px;
+    padding: 5px;
+    border-radius: 16px;
+}
+
+.intro{
+    font-size: 22px;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.caja{
+    position: relative;
+    background-color: #000106;
+    padding: 15px;
+    margin: 50px auto 60px auto;
+    border-radius: 16px;
+    font-size: 15px;
+    display: flex;
+    width: 70%;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
+    transition: ease 0.3s;
+}
+
+.caja:hover{
+    transition: ease 0.3s;
+    background-color: #000414;
+}
+
+.imagen_episodio{
+    margin-right: 20px;
+}
+
+.imagen{
+    width: 350px;
+    height: auto;
+    align-items: center;
+}
+
+.texto{
+    flex-grow: 1;
+    color: #fff;
+}
+
+.episodio{
+    font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.texto h2{
+    font-size: 24px;
+    font-family: felix-titling, Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 2px;
+}
+
+.texto h3{
+    font-size: 26px;
+    margin-left: 10px;
+}
+
+.texto p{
+    margin-left: 10px;
+    font-size: 18px;
+}

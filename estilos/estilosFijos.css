@@ -1,9 +1,54 @@
+/* HEADER */
+
+header{
+    background-color: #000106;
+    height: 10px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0 1px 15px rgba(225, 51, 0, 0.4);
+    font-family: cormorant, Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+ 
+.logo{
+    width: 90px;
+}
+
+.enlaces{
+    display: flex;
+    gap: 30px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.enlaces li a {
+    font-size: 20px ;
+    text-decoration: none;
+    color: #dddddd;
+    transition: 0.2s ease;
+} 
+  
+.enlaces li a:hover {
+    color: #fff;
+    transition: 0.2s ease;
+}
+
+
+/* FOOTER */
+
 .plataformas {
     background-color: #000106;
     padding: 20px 0;
     text-align: center;
-    color: #ccc;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #ffffff;
+    font-family: cormorant, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
   }
   
 .plataformas span{
@@ -53,12 +98,12 @@
   
 .plataformas .icono.x:hover {
     color: #303030;
-  }
+}
     
   .plataformas .icono.facebook:hover {
     color: #274a94;
-  }
+}
 
 .plataformas .icono.yt:hover {
     color: #d10101;
-  }
+}

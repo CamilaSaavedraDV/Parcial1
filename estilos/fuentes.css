@@ -1,0 +1,11 @@
+/* IMPORTE FUENTES*/
+
+@font-face {
+    font-family: felix-titling;
+    src: url(/fuentes/felixtitlingmt.ttf) format('woff2');
+}
+
+@font-face {
+    font-family: cormorant;
+    src: url(/fuentes/Cormorant-VariableFont_wght.ttf) format('woff2');
+}
