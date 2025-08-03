@@ -56,3 +56,61 @@ body {
     color: #65381e;
     font-size: 40px;
 }
+
+@media (max-width: 768px){
+
+    .mensaje i{
+        font-size: 36px;
+    }
+
+    .mensaje h1{
+        font-size: 34px;
+    }
+
+    .mensaje h2{
+        font-size: 24px;
+    }
+
+    .mensaje{
+        max-width: 55%;
+        padding: 30px;
+    }
+
+    .mensaje p{
+        margin-bottom: 40px;
+    }
+
+    .btn{
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .mensaje i{
+        font-size: 32px;
+    }
+
+    .mensaje h1{
+        font-size: 28px;
+    }
+
+    .mensaje h2{
+        font-size: 22px;
+    }
+
+    .mensaje{
+        max-width: 50%;
+        padding: 30px;
+    }
+
+    .mensaje p{
+        font-size: 18px;
+    }
+
+    .btn{
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+}

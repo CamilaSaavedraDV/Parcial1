@@ -5,16 +5,26 @@
         <title>Siete Reinos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilos/estilosFijos.css">
-        <link rel="stylesheet" href="estilos/siete_reinos.css">
-        <link rel="stylesheet" href="estilos/fuentes.css">
-        <link rel="icon" href="imagenes/icono.png">
+        <link rel="stylesheet" href="../estilos/estilosFijos.css">
+        <link rel="stylesheet" href="../estilos/siete_reinos.css">
+        <link rel="stylesheet" href="../estilos/fuentes.css">
+        <link rel="icon" href="../imagenes/icono.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     </head>
 
     <body>
         <header>
-            <img src="imagenes/logo.png" alt = "Game Of Thrones - Logo" class="logo">
+            <img src="../imagenes/logo.png" alt = "Game Of Thrones - Logo" class="logo">
+
+            <input type="checkbox" id="menuBurger" class="oculto">
+
+            <label for="menuBurger" class="menu">
+                <i class="fas fa-bars"></i> </label>
+
+                <nav class="menuAbierto">
+                    <label for="menuBurger" class="btnCerrado">
+                        <i class="fas fa-times"></i> </label>
+                        
                 <nav>
                     <ul class="enlaces">
                         <li><a href="index.html">Inicio</a></li>
@@ -34,22 +44,28 @@
             </p>
         </div>
 
-        <div class="casa stark holograma">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_stark.jpg" alt="Emblema Stark" class="emblema">
-            </figure>
+        <div class="casa stark">
 
-            <div class="texto_casa">
-                <h2>Casa Stark</h2>
-                <p>
-                    La Casa Stark de Invernalia es la casa gobernante del Norte desde Invernalia, siendo una de las casas nobles más antiguas y respetadas del Norte. Son conocidos por su honor, sentido del deber y su conexión con los Antiguos Dioses. Su linaje se remonta a los Primeros Hombres, y durante siglos, ejerció el dominio sobre el Norte como reyes legítimos.
-                </p>
-                
-                <div class="emblema_lema">
-                    <p>Emblema: Lobo huargo de ceniza corriendo sobre un campo de plata</p></li>
-                    <p>Lema: "Se acerca el invierno" ("Winter is coming")</p>
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_stark.jpg" alt="Emblema Stark" class="emblema">
+                </figure>
+
+                <div class="texto_casa">
+                    <h2>Casa Stark</h2>
+                    <p>
+                        La Casa Stark de Invernalia es la casa gobernante del Norte desde Invernalia, siendo una de las casas nobles más antiguas y respetadas del Norte. Son conocidos por su honor, sentido del deber y su conexión con los Antiguos Dioses. Su linaje se remonta a los Primeros Hombres, y durante siglos, ejerció el dominio sobre el Norte como reyes legítimos.
+                    </p>
+                    
+                    <div class="emblema_lema">
+                        <p>Emblema: Lobo huargo de ceniza corriendo sobre un campo de plata</p></li>
+                        <p>Lema: "Se acerca el invierno" ("Winter is coming")</p>
+                    </div>
+
                 </div>
+            </div>
             
+            <div class="personajes-casa">
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Lord Eddard "Ned" Stark: interpretado por Sean Bean</li>
@@ -66,21 +82,26 @@
 
 
         <div class="casa lannister">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_lannister.JPG" alt="Emblema Lannister" class="emblema">
-            </figure>
 
-            <div class="texto_casa">
-                <h2>Casa Lannister</h2>
-                <p>
-                    La Casa Lannister de Roca Casterly es una de las casas más poderosas y ricas. Famosos por su oro, ambición y astucia política, los Lannister han ocupado el Trono de Hierro en varias ocasiones a través de alianzas, matrimonios y manipulaciones. Su influencia es clave en la lucha por el poder en Poniente. 
-                </p>
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_lannister.JPG" alt="Emblema Lannister" class="emblema">
+                </figure>
 
-                <div class="emblema_lema">
-                    <p>Emblema: León rampante dorado sobre fondo carmesí</p>
-                    <p>Lema: "¡Oye mi rugido!" ("Hear me roar"). Aunque más conocido es el no oficial: "Un Lannister siempre paga sus deudas"</p>
+                <div class="texto_casa">
+                    <h2>Casa Lannister</h2>
+                    <p>
+                        La Casa Lannister de Roca Casterly es una de las casas más poderosas y ricas. Famosos por su oro, ambición y astucia política, los Lannister han ocupado el Trono de Hierro en varias ocasiones a través de alianzas, matrimonios y manipulaciones. Su influencia es clave en la lucha por el poder en Poniente. 
+                    </p>
+
+                    <div class="emblema_lema">
+                        <p>Emblema: León rampante dorado sobre fondo carmesí</p>
+                        <p>Lema: "¡Oye mi rugido!" ("Hear me roar"). Aunque más conocido es el no oficial: "Un Lannister siempre paga sus deudas"</p>
+                    </div>
                 </div>
+            </div>
            
+            <div class="personajes-casa">
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Lord Tywin Lannister: cabeza de la Casa Lannister y Señor de Roca Casterly, interpretado por Charles Dance</li>
@@ -95,21 +116,26 @@
         </div>
         
         <div class="casa baratheon">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_baratheon.jpg" alt="Emblema Baratheon" class="emblema">
-            </figure>
 
-            <div class="texto_casa">
-                <h2>Casa Baratheon</h2>
-                <p>
-                    La Casa Baratheon es una casa noble poderosa de Poniente, ubicada en el Bastión de las Tormentas y famosa por su fuerza militar. Fundada por Orys Baratheon, un general Targaryen, fue casa real tras la rebelión de Robert Baratheon.
-                </p>
-                
-                <div class="emblema_lema">
-                    <p>Emblema: Ciervo coronado negro sobre fondo dorado</p>
-                    <p>Lema: "Nuestra es la furia" ("Ours is the fury")</p>
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_baratheon.jpg" alt="Emblema Baratheon" class="emblema">
+                </figure>
+
+                <div class="texto_casa">
+                    <h2>Casa Baratheon</h2>
+                    <p>
+                        La Casa Baratheon es una casa noble poderosa de Poniente, ubicada en el Bastión de las Tormentas y famosa por su fuerza militar. Fundada por Orys Baratheon, un general Targaryen, fue casa real tras la rebelión de Robert Baratheon.
+                    </p>
+                    
+                    <div class="emblema_lema">
+                        <p>Emblema: Ciervo coronado negro sobre fondo dorado</p>
+                        <p>Lema: "Nuestra es la furia" ("Ours is the fury")</p>
+                    </div>
                 </div>
+            </div>
             
+            <div class="personajes-casa">
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Lord Robert Baratheon: interpretado por Mark Addy</li>
@@ -121,21 +147,26 @@
         </div>
 
         <div class="casa tyrell">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_tyrell.jpg" alt="Emblema Tyrell" class="emblema">
-            </figure>
 
-            <div class="texto_casa">
-                <h2>Casa Tyrell</h2>
-                <p>
-                    Los Tyrell son la casa gobernante del Dominio, rica en recursos y diplomacia, ubicada en Altojardín. Se aliaron estratégicamente en la guerra de los cinco reyes.
-                </p>
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_tyrell.jpg" alt="Emblema Tyrell" class="emblema">
+                </figure>
 
-                <div class="emblema_lema">
-                    <p>Emblema: Rosa dorada sobre fondo verde</p>
-                    <p>Lema: "Crece fuerte" ("Growing Strong")</p>
+                <div class="texto_casa">
+                    <h2>Casa Tyrell</h2>
+                    <p>
+                        Los Tyrell son la casa gobernante del Dominio, rica en recursos y diplomacia, ubicada en Altojardín. Se aliaron estratégicamente en la guerra de los cinco reyes.
+                    </p>
+
+                    <div class="emblema_lema">
+                        <p>Emblema: Rosa dorada sobre fondo verde</p>
+                        <p>Lema: "Crece fuerte" ("Growing Strong")</p>
+                    </div>
                 </div>
-            
+            </div>
+
+            <div class="personajes-casa">            
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Margaery Tyrell: interpretada por Natalie Dormer</li>
@@ -147,22 +178,27 @@
         </div>
 
         <div class="casa martell">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_martell.jpg" alt="Emblema Martell" class="emblema">
-            </figure>
 
-            <div class="texto_casa">
-                <h2>Casa Martell</h2>
-                <p>
-                    Los Martell gobiernan Dorne, una región independiente en cultura y costumbres. Conocidos por su honor, orgullo y sed de venganza tras la muerte de Elia Martell.
-                </p>
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_martell.jpg" alt="Emblema Martell" class="emblema">
+                </figure>
 
-                <div class="emblema_lema">
-                    <p>Emblema: Sol atravesado por una lanza</p>
-                    <p>Lema: "Nunca doblegado, nunca roto" ("Unbowed, Unbent, Unbroken")</p>
+                <div class="texto_casa">
+                    <h2>Casa Martell</h2>
+                    <p>
+                        Los Martell gobiernan Dorne, una región independiente en cultura y costumbres. Conocidos por su honor, orgullo y sed de venganza tras la muerte de Elia Martell.
+                    </p>
+
+                    <div class="emblema_lema">
+                        <p>Emblema: Sol atravesado por una lanza</p>
+                        <p>Lema: "Nunca doblegado, nunca roto" ("Unbowed, Unbent, Unbroken")</p>
+                    </div>
                 </div>
-            
-                <h3>Personajes principales</h3>
+            </div>
+                
+            <div class="personajes-casa">   
+            <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Oberyn Martell: interpretado por Pedro Pascal</li>
                     <li>Ellaria Arena: interpretada por Indira Varma</li>
@@ -172,21 +208,26 @@
         </div>
 
         <div class="casa tully">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_tully.jpg" alt="Emblema Tully" class="emblema">
-            </figure>
 
-            <div class="texto_casa">
-                <h2>Casa Tully</h2>
-                <p>
-                    Casa Tully gobierna el Tridente desde Aguasdulces. Son leales y familiares, y estuvieron aliados con los Stark durante la guerra.
-                </p>
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_tully.jpg" alt="Emblema Tully" class="emblema">
+                </figure>
 
-                <div class="emblema_lema">
-                    <p>Emblema: Trucha plateada saltando sobre fondo azul y rojo ondulado</p>
-                    <p>Lema: "Familia, deber, honor" ("Family, Duty, Honor")</p>
+                <div class="texto_casa">
+                    <h2>Casa Tully</h2>
+                    <p>
+                        Casa Tully gobierna el Tridente desde Aguasdulces. Son leales y familiares, y estuvieron aliados con los Stark durante la guerra.
+                    </p>
+
+                    <div class="emblema_lema">
+                        <p>Emblema: Trucha plateada saltando sobre fondo azul y rojo ondulado</p>
+                        <p>Lema: "Familia, deber, honor" ("Family, Duty, Honor")</p>
+                    </div>
                 </div>
-            
+            </div>
+
+            <div class="personajes-casa">
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Catelyn Stark (Tully): interpretada por Michelle Fairley</li>
@@ -198,21 +239,26 @@
         </div>
 
         <div class="casa greyjoy">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_greyjoy.jpg" alt="Emblema Greyjoy" class="emblema">
-            </figure>
 
-            <div class="texto_casa">
-                <h2>Casa Greyjoy</h2>
-                <p>
-                    Casa gobernante de las Islas del Hierro, famosa por su cultura de saqueo. Rezan al Dios Ahogado y valoran la independencia y el poder naval.
-                </p>
+            <div class="infoSup"> 
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_greyjoy.jpg" alt="Emblema Greyjoy" class="emblema">
+                </figure>
 
-                <div class="emblema_lema">
-                    <p>Emblema: Kraken dorado sobre fondo negro</p>
-                    <p>Lema: "Nosotros no sembramos" ("We Do Not Sow")</p>
+                <div class="texto_casa">
+                    <h2>Casa Greyjoy</h2>
+                    <p>
+                        Casa gobernante de las Islas del Hierro, famosa por su cultura de saqueo. Rezan al Dios Ahogado y valoran la independencia y el poder naval.
+                    </p>
+
+                    <div class="emblema_lema">
+                        <p>Emblema: Kraken dorado sobre fondo negro</p>
+                        <p>Lema: "Nosotros no sembramos" ("We Do Not Sow")</p>
+                    </div>
                 </div>
+            </div>
             
+            <div class="personajes-casa">
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Balon Greyjoy: interpretado por Patrick Malahide</li>
@@ -224,21 +270,26 @@
         </div>
 
         <div class="casa targaryen">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_targaryen.jpg" alt="Emblema Targaryen" class="emblema">
-            </figure>
 
-            <div class="texto_casa">
-                <h2>Casa Targaryen</h2>
-                <p>
-                    Antigua casa real de origen valyrio. Gobernaron Poniente durante casi 300 años hasta ser derrocados por Robert Baratheon. Buscan recuperar el Trono de Hierro.
-                </p>
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_targaryen.jpg" alt="Emblema Targaryen" class="emblema">
+                </figure>
 
-                <div class="emblema_lema">
-                    <p>Emblema: Dragón de tres cabezas rojo sobre fondo negro</p>
-                    <p>Lema: "Fuego y sangre" ("Fire And Blood")</p>
+                <div class="texto_casa">
+                    <h2>Casa Targaryen</h2>
+                    <p>
+                        Antigua casa real de origen valyrio. Gobernaron Poniente durante casi 300 años hasta ser derrocados por Robert Baratheon. Buscan recuperar el Trono de Hierro.
+                    </p>
+
+                    <div class="emblema_lema">
+                        <p>Emblema: Dragón de tres cabezas rojo sobre fondo negro</p>
+                        <p>Lema: "Fuego y sangre" ("Fire And Blood")</p>
+                    </div>
                 </div>
-            
+            </div>
+
+            <div class="personajes-casa">           
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Daenerys Targaryen: interpretada por Emilia Clarke</li>
@@ -250,21 +301,26 @@
         </div>
 
         <div class="casa guardia">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/emblema_guardia.jpg" alt="Emblema Guardia de la Noche" class="emblema">
-            </figure>
 
-            <div class="texto_casa">
-                <h2>La Guardia de la Noche</h2>
-                <p>
-                    Hermandad encargada de proteger el Muro y a los Siete Reinos de amenazas del norte, ubicada en el Castillo Negro. Juramentan celibato, lealtad y servicio hasta la muerte.
-                </p>
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/emblema_guardia.jpg" alt="Emblema Guardia de la Noche" class="emblema">
+                </figure>
 
-                <div class="emblema_lema">
-                    <p>Emblema: Cuervo negro sobre fondo blanco</p>
-                    <p>Lema: No poseen lema formal, sino un juramento</p>
-                </div>
-            
+                <div class="texto_casa">
+                    <h2>La Guardia de la Noche</h2>
+                    <p>
+                        Hermandad encargada de proteger el Muro y a los Siete Reinos de amenazas del norte, ubicada en el Castillo Negro. Juramentan celibato, lealtad y servicio hasta la muerte.
+                    </p>
+
+                    <div class="emblema_lema">
+                        <p>Emblema: Cuervo negro sobre fondo blanco</p>
+                        <p>Lema: No poseen lema formal, sino un juramento</p>
+                    </div>
+                </div>  
+            </div>
+
+            <div class="personajes-casa">
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Jon Snow: interpretado por Kit Harington</li>
@@ -277,21 +333,26 @@
         </div>
 
         <div class="casa caminante">
-            <figure class="imagen_emblema">
-                <img src="../imagenes/emblemas/caminante_blanco.jpg" alt="Caminante Blanco" class="emblema">
-            </figure>
-            
-            <div class="texto_casa">
-                <h2>Más allá del Muro</h2>
-                <p>
-                    Al norte del Muro viven los Pueblos Libres (salvajes) y los temidos Caminantes Blancos, antiguos seres mágicos que amenazan con destruir Poniente.
-                </p>
 
-                <div class="emblema_lema">
-                    <p>Emblema: Ninguno oficial</p>
-                    <p>Lema: Ninguno</p>
-                </div>
-            
+            <div class="infoSup">
+                <figure class="imagen_emblema">
+                    <img src="../imagenes/emblemas/caminante_blanco.jpg" alt="Caminante Blanco" class="emblema">
+                </figure>
+                
+                <div class="texto_casa">
+                    <h2>Más allá del Muro</h2>
+                    <p>
+                        Al norte del Muro viven los Pueblos Libres (salvajes) y los temidos Caminantes Blancos, antiguos seres mágicos que amenazan con destruir Poniente.
+                    </p>
+
+                    <div class="emblema_lema">
+                        <p>Emblema: Ninguno oficial</p>
+                        <p>Lema: Ninguno</p>
+                    </div>
+                </div>    
+            </div>
+
+            <div class="personajes-casa">
                 <h3>Personajes principales</h3>
                 <ul class="lista">
                     <li>Tormund Matagigantes: interpretado por Kristofer Hivju</li>

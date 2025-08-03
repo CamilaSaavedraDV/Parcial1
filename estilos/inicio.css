@@ -8,23 +8,19 @@ body{
 
 .fondo{
     position: relative;
-    background-image: url('/imagenes/inicio.PNG');
-    background-size: contain;
+    background-image: url('../imagenes/inicio.PNG');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    width: 100%;
-    height: 120vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end; 
-    text-align: center;
-    z-index: -2;
+    height: 100vh;
 }
 
 .contenido {
     padding: 20px 40px;
-    max-width: 60%;
+    max-width: 70%;
     z-index: 5;
+    text-align: center;
+    margin: auto;
 }
 
 .texto_inicio{
@@ -45,8 +41,7 @@ h1{
 
 .subtitulo{
     font-size: 26px;
-    margin: auto;
-    padding: 50px 0 30px 200px;;
+    padding: 50px 100px;
     font-family: felix-titling, Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
 }
@@ -88,4 +83,93 @@ h1{
     top: 0;
     left: 0;
     padding-bottom: 30px;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .contenido {
+        max-width: 80%;
+        padding: 10px;
+    }
+
+    .fondo{
+        height: 80vh;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .audio{
+        padding: 20px 0;
+    }
+
+    .subtitulo {
+        font-size: 24px;
+        padding: 10px 50px;
+    }
+
+    .texto_inicio {
+        padding-top: 10px;
+        font-size: 20px;
+    }
+
+    .caja h2{
+        font-size: 22px;
+    }
+
+    .caja p{
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 600px){
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+    }
+
+    .fondo {
+        background-size: cover;
+        background-position: center;
+        height: 50vh;
+    }
+
+    .contenido {
+        max-width: 90%;
+        padding: 10px;
+        margin-top: auto;
+    }
+
+    .contenido h1{
+        font-size: 28px;
+    }
+
+    .texto_inicio {
+        padding-top: 10px;
+        font-size: 18px;
+    }
+
+    .subtitulo{
+        padding: 30px 70px;
+    }
+
+    .caja{
+        margin: 30px auto 50px auto;
+    }
+
+    .caja h3{
+        font-size: 20px;
+    }
+
+    .caja p{
+        font-size: 18px;
+    }
+
 }

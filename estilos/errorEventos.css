@@ -62,3 +62,57 @@ body {
 .btn:hover {
     background-color: #214c58;
 }
+
+@media (min-width: 601px) and (max-width: 1024px){
+
+    .mensaje i{
+        font-size: 36px;
+    }
+
+    .mensaje h1{
+        font-size: 34px;
+    }
+
+    .mensaje h2{
+        font-size: 24px;
+    }
+
+    .mensaje{
+        max-width: 50%;
+        padding: 30px;
+    }
+
+    .btn{
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 600px){
+
+    .mensaje i{
+        font-size: 32px;
+    }
+
+    .mensaje h1{
+        font-size: 30px;
+    }
+
+    .mensaje h2{
+        font-size: 22px;
+    }
+
+    .mensaje{
+        max-width: 50%;
+        padding: 30px;
+    }
+
+    .mensaje p{
+        font-size: 18px;
+    }
+
+    .btn{
+        padding: 12px 20px;
+        font-size: 18px;
+    }
+
+}

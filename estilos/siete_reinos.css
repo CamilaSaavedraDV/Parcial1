@@ -36,7 +36,7 @@ p, li{
 .bloque{
     background-color: rgba(70, 7, 7, 0.5);
     margin: 60px auto;
-    max-width: 800px;
+    max-width: 50%;
     padding: 5px;
     border-radius: 16px;
 }
@@ -52,15 +52,16 @@ p, li{
 .casa{
     position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
     padding: 15px;
     margin: 80px auto;
-    max-width: 75%;
+    max-width: 60%;
     background-color: #000106;
     border-radius: 16px;
     overflow: hidden;
     transition: transform 0.4s ease, opacity 0.4s ease;
+    gap: 20px;
 }
 
 .casa::before{
@@ -87,32 +88,61 @@ p, li{
     transform: rotate(-30deg) translateY(100%);
 }
 
+.infoSup{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    z-index: 2;
+}
+
 .imagen_emblema{
     margin: 0;
     padding: 0;
-    margin-right: 20px;
     z-index: 2;
+    flex-shrink: 0;
 }
 
 .emblema{
     width: 200px;
     height: auto;
-    align-items: center;
+    display: flex;
 }
 
 .texto_casa{
     color: #fff;
     z-index: 2;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.texto_casa h2{
+    margin-top: 0;
+    margin-bottom: 10px;
 }
 
 .emblema_lema{
     margin: 0;
-    padding: 5px;
+    margin-top: auto;
+    padding: 5px 0;
+    z-index: 2;
+}
+
+
+
+.personajes-casa{
+    width: 100%;
+    z-index: 2;
+    padding: 0 0 10px 50px ;
 }
 
 .lista{
     list-style: none;
     line-height: 25px;
+    padding: 0;
+    margin: 0;
 }
 
 .stark{
@@ -193,4 +223,113 @@ p, li{
 
 .caminante:hover::before {
     background: linear-gradient(0deg, transparent, transparent 30%, rgba(192,244,255,0.5)); 
+}
+
+@media (min-width: 601px) and (max-width: 1024px){
+
+    .bloque{
+        margin: 40px auto;
+    }
+
+    .bloque p{
+        font-size: 20px;
+        margin: 20px;
+        padding: 0;
+    }
+
+    .bloque h1{
+        font-size: 26px;
+        padding: 0;
+    }
+
+    .casa{
+        max-width: 80%;
+        margin: 60px auto;
+    }
+
+    .emblema_lema p{
+        margin: 10px;
+    }
+
+    .imagen_emblema{
+        flex-basis: 120px;
+        flex-shrink: 0;
+    }
+
+    .texto_casa{
+        flex-grow: 1;
+        min-width: 200px; 
+        color: #fff;
+    }
+
+    .texto_casa p {
+        margin: 10px;
+    }
+
+    .texto_casa h2{
+        font-size: 24px;
+    }
+    .texto_casa p, .emblema_lema p, .lista li{
+        font-size: 18px;
+    }
+
+    .personajes-casa h3{
+        margin-top: 0;
+    }
+
+}
+
+@media (max-width: 600px){
+
+    .bloque{
+        max-width: 75%;
+        margin: 40px auto;
+    }
+
+    .bloque h1{
+        font-size: 30px;
+        margin: 16px;
+    }
+
+    .bloque p{
+        font-size: 20px;
+        padding: 0 20px 20px;
+    }
+
+    .casa{
+        max-width: 70% ;
+        gap: 0;
+        margin: 60px auto;
+    }
+
+    .infoSup{
+        display: block;
+    }
+
+    .emblema{
+        margin: auto;
+    }
+
+    .texto_casa h2{
+        margin: 20px 0 0;
+        font-size: 24px;
+    }
+    
+    .texto_casa p{
+        font-size: 18px;
+    }
+
+    .emblema_lema{
+        padding: 0;
+    }
+
+    .personajes-casa{
+        padding: 0;
+    }
+
+    .personajes-casa li{
+        font-size: 18px;
+        margin: 10px;
+    }
+
 }
