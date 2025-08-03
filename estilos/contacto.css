@@ -37,7 +37,7 @@ body{
     margin-bottom: 40px;
     margin-top: 5px;
     font-size: 35px;
-    font-family: felix-titling;
+    font-family: felix-titling, Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
 }
 
@@ -52,7 +52,7 @@ label{
     margin-top: 22px;
     font-size: 20px;
     letter-spacing: 1px;
-    font-family: felix-titling, Verdana, Geneva, Tahoma, sans-serif;
+    font-family: cormorant, Verdana, Geneva, Tahoma, sans-serif;
 }
 
 input, textarea{
@@ -64,7 +64,7 @@ input, textarea{
     background-color: #04033b85;
     color: #fff;
     font-size: 18px;
-    font-family: cormorant;
+    font-family: cormorant, Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
@@ -81,7 +81,7 @@ button {
     background-color: #030327;
     color: white;
     font-size: 18px;
-    font-family: felix-titling;
+    font-family: felix-titling, Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
     border-radius: 8px;
     cursor: pointer;

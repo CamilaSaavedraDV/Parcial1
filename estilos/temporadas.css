@@ -11,7 +11,7 @@ h1{
     font-size: 36px;
     text-align: center;
     justify-content: center;
-    font-family: felix-titling;
+    font-family: felix-titling, Verdana, Geneva, Tahoma, sans-serif;
     letter-spacing: 2px;
 }
 
