@@ -49,6 +49,7 @@ h1{
 .audio{
     display: flex;
     justify-content: center;
+    margin: auto;
 }
 
 .caja{
@@ -172,4 +173,7 @@ h1{
         font-size: 18px;
     }
 
+    .audio{
+        margin-top: 10px;
+    }
 }
